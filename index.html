@@ -65,25 +65,7 @@
             0% { transform: scale(1); }
             100% { transform: scale(1.2); }
         }
-@media (max-width: 768px) {
-    .reveal section {
-        font-size: 4vw; /* Ukuran teks fleksibel */
-        padding: 10px;
-    }
-
-    .glow-text {
-        font-size: 5vw; /* Ukuran teks judul lebih kecil */
-    }
-
-    .slide-icon {
-        font-size: 10vw; /* Ikon lebih kecil */
-    }
-
-    .slide-content {
-        padding: 5px;
-    }
-}
-
+        
     </style>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -111,10 +93,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
     <script>
         Reveal.initialize({
-            transition: 'slide',
-            slideNumber: true,
-            backgroundTransition: 'fade'
-        });
+    transition: 'slide',
+    slideNumber: true,
+    backgroundTransition: 'fade',
+    width: "100%",
+    height: "100%",
+    margin: 0.1, // Mengurangi margin agar pas di layar HP
+});
+
     </script>
 </body>
 </html>
